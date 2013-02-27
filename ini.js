@@ -10,7 +10,7 @@ function calculate(evt) {
   if (f) {
     var r = new FileReader();
     r.onload = function(e) { 
-      var contents = e.target.______;
+      var contents = e.target.result;
       
       var tokens = lexer(contents);
       var pretty = tokensToString(tokens);
